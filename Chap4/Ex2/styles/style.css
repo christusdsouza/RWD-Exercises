@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.banner {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin: 1em 0;
+}
+.logo {
+    height: 100%;
+    width: 25%;
+    padding: 0 1em;
+} 
+.logo h1{
+    float: left;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+}
+nav {
+    display: flex;
+    flex-shrink: 0;
+    right: 0;
+    padding: 0 5em;
+    width: 80%;
+}
+nav * {
+    flex-shrink: 0;
+    padding: 1em 1em;
+}
+a {
+    text-decoration: none;
+}
+nav a:hover {
+    transition: all .2s ease-in-out;
+    font-size: 105%;
+    backdrop-filter: difference(10%) invert(10%);
+}
+nav a:active {
+    font-size: 115%;
+    color: white;
+    background-color: tomato;
+}
+.headings img {
+    width: 100%;
+    height: 60vh;
+}
+.body {
+    display: flex;    
+}
+.col {
+    flex: 1;
+    margin: 0 .5em;
+}
+.menu, [for*=menu] {
+    display: none;
+}
+.col img {
+    width: auto;
+    height: 25vh;
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        width: 99vw;
+        font-size: .9em;
+        
+    }
+    h1 {
+        font-size: 1vw;
+        margin: auto;
+    }
+    .body {
+        display: flex;    
+        flex-direction: column;
+    }
+    nav{
+        display: none;
+        visibility: collapse;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        background-color: red;
+        width: 100%;
+    }
+    nav a {
+        font-size: 105%;
+        margin-bottom: 2px;
+        padding: 1em 5em;
+        background-color: tomato;
+        width: 100%;
+    }
+    [for*=menu] {
+        margin-top: 1em;
+        position: relative;
+        visibility: visible;
+        display: inline;
+        float: right;
+        width: 100%;
+        padding: .2em;
+        /* border: 5px tomato solid; */
+        background-color: red;
+    }
+    .menu:checked ~ nav {
+        display: flex;
+        visibility: visible;
+    }
+    nav a:hover {
+        transition: all .2s ease-in-out;
+        font-size: 105%;
+    }
+    nav a:active {
+        font-size: 115%;
+        color: white;
+    }
+}

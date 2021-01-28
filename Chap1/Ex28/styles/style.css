@@ -1,0 +1,14 @@
+body {
+    margin: 1em 5em;
+}
+.sub-heading {
+    margin-top: 2em;
+}
+.carousel {
+    height: 120px;
+}
+.carousel img {
+    padding: 1px;
+    width: 120px;
+    height: 100%;
+}

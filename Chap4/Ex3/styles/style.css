@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100vh;
+}
+body {
+    padding: 0.5em;
+
+    background-image: url('../images/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    display: block;
+    width: 8.3vw;
+    margin: 0;
+    width: 50vw;
+    color: white;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+}
+.logo span {
+    font-family: Purisa;
+    font-size: 4.5vw;
+    font-weight: 1000;
+    display: block;
+}
+.logo figcaption {
+    font-size: 2vw;
+    font-family: serif;
+    font-style: oblique;
+}
+nav {
+    margin: 1em 0;
+    width: 100%;
+    display: flex;
+    background-color: blue;
+    border-radius: 0.3em;
+    align-items: center;
+}
+nav * {
+    padding: 0.2em 1em;
+    font-size: 1.7vw;
+    color: white;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    transition: all 0.2s ease-in-out;
+    font-size: 125%;
+    backdrop-filter: saturate(80%) drop-shadow(4px 4px 10px white);
+}
+.searchbox {
+    justify-self: end;
+    margin: 0.2em 0 0.2em auto;
+    border-radius: 0.5em;
+    width: 20vw;
+    float: right;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+}
+.body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+}
+.about-us {
+    background-color: #ffff;
+    border-radius: 3% 3% 3% 3%;
+    padding: 1em;
+}
+.sidebar {
+    background-color: #ffff;
+    border-radius: 3% 3% 3% 3%;
+    padding: .5em;
+}
+footer {
+    font-size: 0.7rem;
+}
+.sidebar h2 {
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 320px) {
+    * {
+        height: auto;
+        font-size: 12px;
+    }
+    body {
+        padding: 0;
+    }
+    .logo figcaption {
+        font-size: 3.2vw;
+    }
+    nav {
+        align-content: flex-start;
+        margin: 0.5em 0;
+        height: 150%;
+    }
+    nav * {
+        padding: .5em 0;
+        margin: auto;
+        font-size: 3.3vw;
+        text-align: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    a:hover {
+        transition: all 0.2s ease-in-out;
+        font-size: 115%;
+        backdrop-filter: saturate(80%) drop-shadow(4px 4px 10px blue);
+    }
+    .searchbox {
+        position: absolute;
+        right: 0.5em;
+        top: 2%;
+    }
+    .body {
+        display: unset;
+        padding: .5em;
+        margin: 0;
+    }
+    .about-us, .sidebar {
+        margin: 0;
+        padding: .2em;
+        margin-bottom: 1em;
+        width: unset;
+    }
+    h1 {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+}

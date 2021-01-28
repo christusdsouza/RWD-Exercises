@@ -1,0 +1,46 @@
+table {
+	width: 100%;
+}
+th h3 {
+	text-align: left;
+}
+.breakers {
+	margin:1vw
+}
+.desc-images {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	filter: blur(1px);
+}
+footer {
+	background-color: #FFFFAA;
+	color: black;
+}
+body{
+	background-color: #483c50;
+	color: white;
+    font-family:sans-serif;
+	margin: 2vw;
+}
+#logo{
+  font-size: 15vh;
+  font-family: 'serif';
+  font-style: italic;
+}
+nav {
+	padding: 0 10vw;
+    background-color: #44474E;
+	text-align: center;
+}
+.desc-images:hover {
+	filter: blur(0px);
+}
+a:hover {
+	background-color: red;
+}
+a{
+    margin: 15px;
+    color: brown;
+    text-transform: uppercase;
+}

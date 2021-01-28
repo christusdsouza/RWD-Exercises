@@ -1,0 +1,28 @@
+body {
+	background-image: url('../images/back.jpg');
+	height: 100vh;
+}
+.carousel img, #logo{
+	margin-top: 1vh;
+	width: 15vw;
+	height: 15vh;
+}
+nav {
+	background-color: #32a852;
+	font-size: 5vh;
+}
+a {
+	margin: 5vw;
+}
+hr {
+    color: white;
+    margin: 1vw;
+}
+footer h3 {
+    color: maroon;
+}
+footer {
+	margin: 5vw 20vh;
+    padding: .2vw .2vh;
+	background-color: #32a852;
+}

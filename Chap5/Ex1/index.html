@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Instant Search</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"></link>
+    <script src="../../assets/angular.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</head>
+<body>
+   <div ng-app="instantSearch" ng-controller="InstantSearchController">
+        <div class="bar">
+           <input type="text" ng-model="searchString" placeholder="Search for contact" />
+        </div>
+   <ul>
+       <li ng-repeat="i in items | filter:searchString">
+       <a href="{{i.PhoneNo}}"><img ng-src="{{i.image}}" /></a>
+       <p>{{i.Name}}</p></li>
+    </ul>
+   </div> 
+</body>
+</html>

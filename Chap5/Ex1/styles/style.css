@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: sans-serif;
+    color: #5e5b64;
+    text-align: center;
+}
+
+.bar{
+    background-color: blue;
+    border: 1px solid #738289;
+    width: 400px;
+    padding: 14px;
+    margin: 45px auto 20px;
+    position: relative;
+}
+
+.bar input {
+    width: 100%;
+    line-height: 19px;
+    padding: 11px 0;
+    border-radius: 2px;
+    font-size: 102%;
+    font-family: inherit;
+    font-weight: bold;
+    text-indent: 40px;
+}
+
+ul{
+    list-style: none;
+    width: 428px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    overflow: hidden; 
+}
+
+ul li img {
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+ul li p {
+    margin-left: 75px;
+    font-weight: bold;
+    padding-top: 12px;
+    color: #6e7a7f;
+}

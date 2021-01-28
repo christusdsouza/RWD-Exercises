@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+} 
+body {
+    padding: .5em;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.banner {
+    position: relative;
+    background-image: url('../images/banner.png');
+    background-size: 100% 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 25vh;
+}
+.logo {
+    position: absolute;
+    width: 8.3vw;
+    display: inline-flex;
+    margin-left: .5em;
+    bottom: 1em;
+}
+.logo h1 {
+    font-size: 2em;
+    font-style: oblique;
+}
+.logo img {
+    float: left;
+}
+.contacts {
+    padding-right: 1em;
+    padding-top: 4em;
+    float: right;
+}
+nav {
+    width: 100%;
+    display: flex;
+    background-color: blue;
+    shape-rendering: crispEdges;
+    padding: .1em;
+    border-radius: 0% 0% 20% 20%;
+}
+nav * {
+    align-items: flex-start;
+    padding: 0 1rem;
+    font-size: 1.3vw;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    transition: all .2s ease-in-out;
+    font-size: 125%;
+    backdrop-filter: saturate(80%) drop-shadow(4px 4px 10px blue);
+}
+.searchbox {
+    justify-self: end;
+    margin-left: auto;
+    border-radius: 10%;
+    width: 12vw;
+    float: right;
+}
+.sub-heading, .items{
+    border-bottom: 2px lawngreen solid;
+}
+.items {
+    position: relative;
+    display: block;
+    border-bottom: 2px lawngreen solid;
+    overflow: hidden;
+}
+.items:first-of-type {
+    display: grid;
+    grid-template-rows: .1fr 3.4em 2.5fr;
+    grid-template-columns: 3fr 2fr;
+    gap: 1em;
+    grid-template-areas:
+       "top top-r"
+       "left right-c"
+       "bottom bottom-r";
+}
+.items:first-of-type p {
+    grid-area: left;
+}
+.items:first-of-type ul {
+    grid-area: bottom;
+    align-self: flex-start;
+}
+.images:first-of-type {
+    grid-area: right-c;
+    grid
+}
+.items .images {
+    position: relative;
+    float: right;
+    top: -5em;
+    right: 0;
+    filter: blur(2px);
+}
+.images:hover {
+    filter: blur(0);
+}
+footer {
+    background-color: yellow;
+    padding: 0.1em 0 0.1em 2%;
+    border-radius: 10%;
+}
+.menu, [for*=menu] {
+    display: none;
+}
+.note {
+    position: absolute;
+    bottom: 0;
+    float: left;
+}

@@ -1,0 +1,22 @@
+.body{
+    margin: 20px; 
+    padding: 5px;
+    border: 2px solid black;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap; 
+}
+nav img {
+    padding: 1px;
+    width: 120px;
+    height: 100%;
+}
+.headings {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 13pt;
+    height: 200px;
+    width: 400px;
+    text-align: right;
+}
